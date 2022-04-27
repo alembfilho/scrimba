@@ -1,10 +1,19 @@
+import { nanoid } from 'nanoid'
 import { shuffleAnswers } from '../utils'
 
 export default function Trivia ({data}){
-  const handleClick = () =>{console.log('clicked')}
+  const handleClick = (ans) =>{
+    if(ans===data.correct_answer)
+      console.log('acertou')
+  }
 
   return <div>
     <h1>{data.question}</h1>
-    {shuffleAnswers(data).map((ans,i)=><button key={data.question+i} onClick={handleClick}>{ans}</button>)}
+    {shuffleAnswers(data).map(ans=>
+      <button 
+        key={nanoid()} 
+        onClick={()=>handleClick(ans)}
+      >{ans}</button>
+    )}
   </div>
 }
