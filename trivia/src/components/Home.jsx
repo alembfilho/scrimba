@@ -1,7 +1,7 @@
 export default function Home ({startGame}){
-  return <div>
+  return <div className='home'>
     <h1>Quizzical</h1>
-    <p>Some description if needed</p>
+    <p>It's time to test your knowledge!</p>
     <button onClick={startGame}>Start quiz</button>
   </div>
 }
