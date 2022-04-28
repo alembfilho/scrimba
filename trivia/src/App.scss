@@ -1,28 +1,33 @@
 .App {
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background: #F5F7FB;
+  overflow: hidden;
+  color: #293264;
+  font-size: 16px;
+
 }
 
 #yellowBlob{
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 0;
 }
 
 #blueBlob{
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 0;
 }
 
 .home{
-  font-size: 16px;
   letter-spacing: 0.4px;
-  color: #293264;
+  text-align: center;
 
 
   h1{
@@ -44,5 +49,35 @@
     color: #F5F7FB;
     font-size: 16px;
     letter-spacing: 0.4px;
+    cursor: pointer;
   }
+}
+
+.main{
+  z-index: 1;
+  margin: 40px 75px;
+
+  >div{
+    border-bottom: 0.794239px solid #DBDEF0;
+    padding-bottom: 20px;
+  }
+
+  button{
+    height: 30px;
+    min-width: 80px;
+    border: 0.8px solid #4D5B9E;
+    background: #F5F7FB;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-size: 12px;
+    color: #293264;
+
+    padding: 0 15px;
+    margin-right: 20px;
+
+    cursor: pointer;
+
+  }
+
 }

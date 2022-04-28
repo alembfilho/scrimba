@@ -16,7 +16,7 @@ export default function Main (){
         })
   },[])
 
-  return <div>
+  return <div className='main'>
     {trivias.map((trivia,i)=><Trivia key={nanoid()} data={trivia}/>)}
   </div>
 }

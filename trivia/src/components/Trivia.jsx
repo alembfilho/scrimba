@@ -8,7 +8,7 @@ export default function Trivia ({data}){
   }
 
   return <div>
-    <h1>{data.question}</h1>
+    <h2>{data.question}</h2>
     {shuffleAnswers(data).map(ans=>
       <button 
         key={nanoid()} 
