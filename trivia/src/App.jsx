@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.scss';
+import './styles/App.scss';
 import yellowBlob from './images/blob-yellow.svg'
 import blueBlob from './images/blob-blue.svg'
 import Home from './components/Home';

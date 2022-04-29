@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { decode } from '../utils'
+import '../styles/Main.scss'
 import Trivia from './Trivia'
 import {nanoid} from 'nanoid'
 

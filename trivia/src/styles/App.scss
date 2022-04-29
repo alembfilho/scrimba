@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+  background: #F5F7FB;
+  overflow: hidden;
+  color: #293264;
+  font-size: 16px;
+
+}
+
+#yellowBlob{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+#blueBlob{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
