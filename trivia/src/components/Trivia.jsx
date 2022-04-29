@@ -1,19 +1,30 @@
 import { nanoid } from 'nanoid'
-import { shuffleAnswers } from '../utils'
+import { useState } from 'react'
 
 export default function Trivia ({data}){
+
+  function shuffleAnswers(trivia) {
+    return [{text: trivia.correct_answer, isCorrect: true, isSelected: false},
+      ...trivia.incorrect_answers.map(ans=>({text: ans, isCorrect: false, isSelected: false}))
+    ].sort((a, b) => 0.5 - Math.random())
+  }
+
+  const [answers, setAnswers] = useState(shuffleAnswers(data))
+
   const handleClick = (ans) =>{
-    if(ans===data.correct_answer)
-      console.log('acertou')
+    console.log('acertou')
+    // if(ans===data.correct_answer)
+    setAnswers(oldAns=>oldAns.map(old=> old.text===ans.text?{...old, isSelected:!old.isSelected}:old))
   }
 
   return <div>
     <h2>{data.question}</h2>
-    {shuffleAnswers(data).map(ans=>
+    {answers.map(ans=>
       <button 
         key={nanoid()} 
         onClick={()=>handleClick(ans)}
-      >{ans}</button>
+        className={`${ans.isSelected&&"selected"}`}
+      >{ans.text}</button>
     )}
   </div>
 }

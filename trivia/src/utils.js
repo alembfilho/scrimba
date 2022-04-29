@@ -6,7 +6,3 @@ export function decode(trivia) {
     })
   )
 }
-
-export function shuffleAnswers(trivia) {
-  return [trivia.correct_answer, ...trivia.incorrect_answers].sort((a, b) => 0.5 - Math.random())
-}

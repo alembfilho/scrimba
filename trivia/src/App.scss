@@ -12,14 +12,14 @@
 }
 
 #yellowBlob{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 0;
 }
 
 #blueBlob{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   z-index: 0;
@@ -77,6 +77,24 @@
     margin-right: 20px;
 
     cursor: pointer;
+
+    &.selected{
+      background: #D6DBF5;
+    }
+
+    &.correct{
+      background: #94D7A2;
+      border: none;
+    }
+
+    &.incorrect{
+      background: #F8BCBC;
+      border: none;
+    }
+
+    &.disabled{
+      opacity: 0.5;
+    }
 
   }
 
