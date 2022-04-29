@@ -32,8 +32,6 @@ export default function Main() {
     ].sort((a, b) => 0.5 - Math.random())
   }
 
-
-
   const setAnswer = trivia => ans =>
     setTrivias(oldTrivias =>
       oldTrivias.map(oldTrivia => {
@@ -50,7 +48,7 @@ export default function Main() {
       })
     )
 
-  const handleClick = () => {
+  function checkOrRestart() {
     if (isCheckingAnswers) getTrivia()
     else setScore(trivias.reduce((t, { answers }) =>
       t + answers.some(ans => ans.isCorrect && ans.isSelected), 0)
@@ -74,7 +72,7 @@ export default function Main() {
 
       <button
         className='mainButton'
-        onClick={handleClick}
+        onClick={checkOrRestart}
       >{isCheckingAnswers ? "Play again" : "Check answers"}</button>
 
     </div>
