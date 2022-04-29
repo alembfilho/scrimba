@@ -1,30 +1,26 @@
 import { nanoid } from 'nanoid'
-import { useState } from 'react'
+import '../styles/Trivia.scss'
 
-export default function Trivia ({data}){
+export default function Trivia({ trivia, setAnswer, isCheckingAnswers }) {
 
-  function shuffleAnswers(trivia) {
-    return [{text: trivia.correct_answer, isCorrect: true, isSelected: false},
-      ...trivia.incorrect_answers.map(ans=>({text: ans, isCorrect: false, isSelected: false}))
-    ].sort((a, b) => 0.5 - Math.random())
+  function classes(ans) {
+    if (isCheckingAnswers) {
+      if (ans.isCorrect) return "correct"
+      else return ans.isSelected ? "incorrect" : "disabled"
+    } else return ans.isSelected ? "selected" : ""
   }
 
-  const [answers, setAnswers] = useState(shuffleAnswers(data))
+  return <div className='trivia'>
+    <h2>{trivia.question}</h2>
 
-  const handleClick = (ans) =>{
-    console.log('acertou')
-    // if(ans===data.correct_answer)
-    setAnswers(oldAns=>oldAns.map(old=> old.text===ans.text?{...old, isSelected:!old.isSelected}:old))
-  }
-
-  return <div>
-    <h2>{data.question}</h2>
-    {answers.map(ans=>
-      <button 
-        key={nanoid()} 
-        onClick={()=>handleClick(ans)}
-        className={`${ans.isSelected&&"selected"}`}
+    {trivia.answers.map(ans =>
+      <button
+        key={nanoid()}
+        disabled={isCheckingAnswers}
+        className={classes(ans)}
+        onClick={() => setAnswer(ans)}
       >{ans.text}</button>
     )}
+
   </div>
 }

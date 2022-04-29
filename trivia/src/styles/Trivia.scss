@@ -1,0 +1,45 @@
+.trivia{
+  border-bottom: 0.8px solid #DBDEF0;
+
+  button{
+    height: 30px;
+    min-width: 80px;
+    border: 0.8px solid #4D5B9E;
+    background: #F5F7FB;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-size: 12px;
+    color: #293264;
+
+    padding: 0 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+
+    &.selected{
+      background: #D6DBF5;
+    }
+
+    &.correct{
+      background: #94D7A2;
+      border: none;
+    }
+
+    &.incorrect{
+      background: #F8BCBC;
+      border: none;
+      opacity: 0.5;
+    }
+
+    &.disabled{
+      opacity: 0.5;
+    }
+
+    &:disabled{
+      cursor: default;
+    }
+
+  }
+}
