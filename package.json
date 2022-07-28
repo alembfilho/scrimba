@@ -1,8 +1,12 @@
 {
-  "dependencies": {
+  "homepage": "http://alembfilho.github.io/scrimba",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "ncp": "^2.0.0",
     "sass": "^1.51.0"
   },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
+  "scripts": {
+    "predeploy": "ncp index.md build && ncp img build/img && ncp trivia/build build/trivia && ncp travel-journal/build build/travel-journal && ncp business-card/build build/business-card",
+    "deploy": "gh-pages -d build"
   }
 }
