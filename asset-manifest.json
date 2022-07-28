@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/scrimba/static/css/main.7ad15707.css",
-    "main.js": "/scrimba/static/js/main.541b32b4.js",
-    "static/js/787.dddbe7b4.chunk.js": "/scrimba/static/js/787.dddbe7b4.chunk.js",
-    "index.html": "/scrimba/index.html",
-    "static/media/blob-blue.svg": "/scrimba/static/media/blob-blue.5a0801127e1ec77c80b57fb7ab867cd6.svg",
-    "static/media/blob-yellow.svg": "/scrimba/static/media/blob-yellow.aab50735d1dbc905f9ed419ced3aabef.svg",
-    "main.7ad15707.css.map": "/scrimba/static/css/main.7ad15707.css.map",
-    "main.541b32b4.js.map": "/scrimba/static/js/main.541b32b4.js.map",
-    "787.dddbe7b4.chunk.js.map": "/scrimba/static/js/787.dddbe7b4.chunk.js.map"
+    "main.css": "/scrimba/trivia/static/css/main.7ad15707.css",
+    "main.js": "/scrimba/trivia/static/js/main.dcebb50d.js",
+    "static/js/787.dddbe7b4.chunk.js": "/scrimba/trivia/static/js/787.dddbe7b4.chunk.js",
+    "index.html": "/scrimba/trivia/index.html",
+    "static/media/blob-blue.svg": "/scrimba/trivia/static/media/blob-blue.5a0801127e1ec77c80b57fb7ab867cd6.svg",
+    "static/media/blob-yellow.svg": "/scrimba/trivia/static/media/blob-yellow.aab50735d1dbc905f9ed419ced3aabef.svg",
+    "main.7ad15707.css.map": "/scrimba/trivia/static/css/main.7ad15707.css.map",
+    "main.dcebb50d.js.map": "/scrimba/trivia/static/js/main.dcebb50d.js.map",
+    "787.dddbe7b4.chunk.js.map": "/scrimba/trivia/static/js/787.dddbe7b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ad15707.css",
-    "static/js/main.541b32b4.js"
+    "static/js/main.dcebb50d.js"
   ]
 }
