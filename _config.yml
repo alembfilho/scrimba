@@ -1,1 +1,1 @@
-site.JB.BASE_PATH = https://alembfilho.github.io/scrimba
+site.JB.BASE_PATH: https://alembfilho.github.io/scrimba
