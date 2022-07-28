@@ -8,7 +8,7 @@ This simple trivia game uses the [Open Trivia DB](https://opentdb.com/) to retri
 It includes **Scoring**, **New Game**, and shows **Correct Answers**
 
 Click [here](https://alembfilho.github.io/scrimba/trivia) to open the live demo
-![Trivia Screenshot](/img/trivia.png)
+![Trivia Screenshot]({{BASE_PATH}}/img/trivia.png)
 
 # Travel journal
 This travel journal uses mock data to display the destinations.
