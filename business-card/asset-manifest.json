@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/scrimba/business-card/static/css/main.59687083.css",
+    "main.js": "/scrimba/business-card/static/js/main.b671ab3e.js",
+    "static/js/787.bc412fff.chunk.js": "/scrimba/business-card/static/js/787.bc412fff.chunk.js",
+    "static/media/perfil.jpg": "/scrimba/business-card/static/media/perfil.39ca98e0f44b55a0da77.jpg",
+    "index.html": "/scrimba/business-card/index.html",
+    "main.59687083.css.map": "/scrimba/business-card/static/css/main.59687083.css.map",
+    "main.b671ab3e.js.map": "/scrimba/business-card/static/js/main.b671ab3e.js.map",
+    "787.bc412fff.chunk.js.map": "/scrimba/business-card/static/js/787.bc412fff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59687083.css",
+    "static/js/main.b671ab3e.js"
+  ]
+}
