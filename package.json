@@ -6,7 +6,7 @@
     "sass": "^1.51.0"
   },
   "scripts": {
-    "edeploy": "ncp README.md build/index.md && ncp img build/img && ncp trivia/build build/trivia && ncp travel-journal/build build/travel-journal && ncp business-card/build build/business-card",
+    "predeploy": "ncp README.md build/index.md && ncp img build/img && ncp trivia/build build/trivia && ncp travel-journal/build build/travel-journal && ncp business-card/build build/business-card",
     "deploy": "gh-pages -d build"
   }
 }
